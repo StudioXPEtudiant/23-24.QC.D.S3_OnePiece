@@ -26,6 +26,7 @@ public class CharacterMovement : MonoBehaviour
 
         Vector3 movement = (_movementX +_movementZ).normalized;
 
+        _characterController.Move(Physics.gravity * Time.deltaTime);
         _characterController.Move(movement * Time.deltaTime * 6);
     }
 
