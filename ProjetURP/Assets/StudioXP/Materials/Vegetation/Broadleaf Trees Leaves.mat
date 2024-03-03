@@ -15,23 +15,15 @@ MonoBehaviour:
   version: 4
 --- !u!21 &2100000
 Material:
-  serializedVersion: 8
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Broadleaf Trees Leaves
   m_Shader: {fileID: 4800000, guid: c06c91c9416ad0f4e8a67d6103e77fdc, type: 3}
-  m_ValidKeywords:
-  - _ALPHATEST
-  - _COLOR_TINT
-  - _LIGHTING_QUALITY_HIGH
-  - _OVERLAY
-  - _TRANSLUCENCY
-  - _WIND
-  m_InvalidKeywords:
-  - _BAKEDMESHDATA_OFF
-  - _INTERACTION_OFF
+  m_ShaderKeywords: _ALPHATEST _COLOR_TINT _LIGHTING_QUALITY_HIGH _OVERLAY _TRANSLUCENCY
+    _WIND
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

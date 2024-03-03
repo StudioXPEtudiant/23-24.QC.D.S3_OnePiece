@@ -1,5 +1,5 @@
+using ThirdParty.QuickOutline.Scripts;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace StudioXP.Scripts.Objects
 {

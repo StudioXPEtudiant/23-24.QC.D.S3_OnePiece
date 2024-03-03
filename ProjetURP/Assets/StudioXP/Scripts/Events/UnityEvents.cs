@@ -1,6 +1,7 @@
 using System;
 using StudioXP.Scripts.Character;
 using StudioXP.Scripts.Characters;
+using StudioXP.Scripts.Characters.Actions;
 using StudioXP.Scripts.Objects;
 using UnityEngine;
 using UnityEngine.Events;
@@ -43,9 +44,21 @@ namespace StudioXP.Scripts.Events
     }
 
     [Serializable]
+    public class InteractActionEvent : UnityEvent<CharacterAction>
+    {
+        
+    }
+
+    [Serializable]
     public class InteractableEvent : UnityEvent<Interactable>
     {
         
+    }
+
+    [Serializable]
+    public class PickableEvent : UnityEvent<Pickable>
+    {
+
     }
 
 }

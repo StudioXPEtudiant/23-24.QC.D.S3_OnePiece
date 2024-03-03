@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 7326125767770897043}
   - component: {fileID: -4407091314835094912}
   - component: {fileID: 3269211963871324914}
+  - component: {fileID: 2573949003614024920}
   m_Layer: 6
   m_Name: Log
   m_TagString: Untagged
@@ -221,8 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupPosition: {x: 0.4192514, y: -0.03061277, z: 0.8703719}
   pickupRotation: {x: 0.21983522, y: -0.66025406, z: -0.26488566, w: -0.6675124}
-  animatorController: {fileID: 9100000, guid: 4c58cd4e448ef8b439d50462f6e17558, type: 2}
-  onPickup:
+  pickedUp:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7326125767770897043}
@@ -251,7 +251,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onDrop:
+  dropped:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7326125767770897043}
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586249e7b2fd5af4f8e0d62cc308ef45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onStartLookAt:
+  startedLookingAt:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3269211963871324914}
@@ -295,7 +295,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onStopLookAt:
+  stoppedLookingAt:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3269211963871324914}
@@ -363,6 +363,23 @@ MonoBehaviour:
   - {fileID: 6180358565897169195}
   - {fileID: 1204807611991550894}
   - {fileID: 171558782718007348}
+--- !u!114 &2573949003614024920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624195860283696021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34a7d7e78f134c4faec1b615c6c263a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storagePosition: {x: 0, y: 0, z: 0}
+  storageRotation: {x: 0, y: 0, z: 0.70710677, w: 0.70710677}
+  storageScale: {x: 0.3, y: 0.3, z: 0.3}
+  storageTypes:
+  - Log
 --- !u!1 &3217759691495702094
 GameObject:
   m_ObjectHideFlags: 0

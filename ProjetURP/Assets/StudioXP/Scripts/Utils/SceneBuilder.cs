@@ -8,6 +8,7 @@ using UnityEditor;
 
 namespace StudioXP.Scripts.Utils
 {
+#if UNITY_EDITOR
     [ExecuteInEditMode]
     public class SceneBuilder : MonoBehaviour
     { 
@@ -22,7 +23,6 @@ namespace StudioXP.Scripts.Utils
             }
         }*/
 
-#if UNITY_EDITOR
        // [MenuItem("Studio XP/Exporter le projet")]
         /*public static void ExportPackage()
         {
@@ -75,6 +75,6 @@ namespace StudioXP.Scripts.Utils
             if (!string.IsNullOrEmpty(savePath))
                 AssetDatabase.ExportPackage(projectContent, savePath, flags);
         }
-#endif
     }
+#endif
 }

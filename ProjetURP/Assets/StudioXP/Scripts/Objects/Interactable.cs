@@ -14,12 +14,16 @@ namespace StudioXP.Scripts.Objects
         
         public void StartLookingAt()
         {
-            startedLookingAt.Invoke();
+            var pick = GetComponent<Pickable>();
+            if (!pick || !pick.IsOnHand())
+                startedLookingAt.Invoke();
         }
 
         public void StopLookingAt()
         {
-            stoppedLookingAt.Invoke();
+            var pick = GetComponent<Pickable>();
+            if (!pick || !pick.IsOnHand())
+                stoppedLookingAt.Invoke();
         }
     }
 }

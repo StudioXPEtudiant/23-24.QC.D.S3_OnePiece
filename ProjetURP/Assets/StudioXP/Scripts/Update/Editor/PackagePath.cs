@@ -21,9 +21,9 @@ namespace StudioXP.Scripts.Update.Editor
         private const string RepositoryRootURL = "https://git.studioxp.ca/Unity";
         private const string PackageName = "SurvivalRPG";
         //private const string PackageBranch = "master";
-        //private const string PackageBranch = "Concepteur-000";
+        private const string PackageBranch = "Concepteur-000";
         //private const string PackageBranch = "Graphiste-000";
-        private const string PackageBranch = "Programmeur-000";
+        //private const string PackageBranch = "Programmeur-000";
         
         public static string PackageRootURL => $"{RepositoryRootURL}/{PackageName}/raw/branch/{PackageBranch}";
         public static string ProjectRoot => Directory.GetParent(Application.dataPath)?.FullName;
